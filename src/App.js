@@ -4,12 +4,13 @@ import Card from './components/Card';
 function App() {
   return (
     <>
-      <Button text='Button' />
+      <Button title="Button" />
       <Card
         title='card'
         content={
           <>
-            <div>1.이미지파일 넣기</div> <div>2.디자인변경</div>{' '}
+            <div>1.이미지파일 넣기</div>
+            <div>2.디자인변경</div>{' '}
           </>
         }
       />
