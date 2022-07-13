@@ -1,20 +1,50 @@
 import Button from './components/Button';
-import Card from './components/Card';
+import CardPage from './pages/CardPage';
+import { Routes, Route, Link } from 'react-router-dom';
 
 function App() {
   return (
     <>
-      <Button text='Button' />
-      <Card
-        title='card'
-        content={
-          <>
-            <div>1.이미지파일 넣기</div> <div>2.디자인변경</div>{' '}
-          </>
-        }
-      />
+      <Routes>
+        <Route
+          path='/button'
+          element={
+            <div>
+              <Button title='Button' />
+            </div>
+          }
+        />
+        <Route
+          path='/'
+          element={
+            <div>
+              <MainPage />
+            </div>
+          }
+        />
+        <Route
+          path='/card'
+          element={
+            <div>
+              <CardPage />
+            </div>
+          }
+        />
+      </Routes>
     </>
   );
 }
-
+function MainPage() {
+  return (
+    <>
+      <h1>메인페이지</h1>
+      <div>
+        <Link to={'/'}>메인페이지로 이동</Link>
+      </div>
+      <div>
+        <Link to={'/card'}>카드페이지로 이동</Link>
+      </div>
+    </>
+  );
+}
 export default App;
