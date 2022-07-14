@@ -1,23 +1,31 @@
-import { Routes, Route, BrowserRouter } from 'react-router-dom';
-import Button from './components/Button';
-import CardPage from './pages/CardPage';
-import Home from './routes/Home';
+import { Route, Routes } from "react-router-dom";
+import Button from "./components/Button";
+import CardPage from "./pages/CardPage";
+import MainPage from "./pages/MainPage";
 
-export function Router() {
-    <BrowserRouter>
+function Router() {
+    return (
         <Routes>
-            <Route path="/">
-                <Home />
-            </Route>
-            <Route path="/button">
-                <Button />
-            </Route>
-            <Route path="/card">
-                <CardPage />
-            </Route>
-
+            <Route
+                path='/'
+                element={
+                    <MainPage />
+                }
+            />
+            <Route
+                path='/button'
+                element={
+                    <Button title='Button' />
+                }
+            />
+            <Route
+                path='/card'
+                element={
+                    <CardPage />
+                }
+            />
         </Routes>
-    </BrowserRouter>
+    )
 }
 
 export default Router;

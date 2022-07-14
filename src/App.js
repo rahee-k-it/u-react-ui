@@ -13,6 +13,7 @@ const GlobalStyle = createGlobalStyle`
         width: fit-content;
     }
 `;
+
 function App() {
     return (
         <>
