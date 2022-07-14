@@ -15,14 +15,15 @@ const GlobalStyle = createGlobalStyle`
 `;
 
 function App() {
-    return (
-        <>
-            <GlobalStyle />
-            <Link style={{ textAlign: "center" }} to={''}><h1>Home</h1></Link>
-            <Router />
-
-        </>
-    );
+  return (
+    <>
+      <GlobalStyle />
+      <Link style={{ textAlign: 'center' }} to={''}>
+        <h1>Home</h1>
+      </Link>
+      <Router />
+    </>
+  );
 }
 
 export default App;
