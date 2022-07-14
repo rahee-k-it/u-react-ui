@@ -1,50 +1,28 @@
-import Button from './components/Button';
-import CardPage from './pages/CardPage';
-import { Routes, Route, Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
+import { createGlobalStyle } from 'styled-components';
+import Router from './Router';
+
+const GlobalStyle = createGlobalStyle`
+ a{
+        text-decoration: none;
+        color:black;
+    }
+    li{
+        margin-bottom: 10px;
+        border-bottom: 1px solid gray;
+        width: fit-content;
+    }
+`;
 
 function App() {
-  return (
-    <>
-      <Routes>
-        <Route
-          path='/button'
-          element={
-            <div>
-              <Button title='Button' />
-            </div>
-          }
-        />
-        <Route
-          path='/'
-          element={
-            <div>
-              <MainPage />
-            </div>
-          }
-        />
-        <Route
-          path='/card'
-          element={
-            <div>
-              <CardPage />
-            </div>
-          }
-        />
-      </Routes>
-    </>
-  );
+    return (
+        <>
+            <GlobalStyle />
+            <Link style={{ textAlign: "center" }} to={''}><h1>Home</h1></Link>
+            <Router />
+
+        </>
+    );
 }
-function MainPage() {
-  return (
-    <>
-      <h1>메인페이지</h1>
-      <div>
-        <Link to={'/'}>메인페이지로 이동</Link>
-      </div>
-      <div>
-        <Link to={'/card'}>카드페이지로 이동</Link>
-      </div>
-    </>
-  );
-}
+
 export default App;

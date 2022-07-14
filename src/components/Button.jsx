@@ -4,10 +4,10 @@ const ButtonRed = styled.button`
 background-color: tomato;
 `;
 
-function Button({ text }) {
+function Button({ title }) {
     return (
         <>
-            <ButtonRed>{text}</ButtonRed>
+            <ButtonRed>{title}</ButtonRed>
         </>
     )
 };
