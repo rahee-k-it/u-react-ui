@@ -5,7 +5,7 @@ function CardPage() {
     <>
       <div>
         <Card
-          title='card'
+          title="card"
           content={
             <>
               <div>1.이미지파일 넣기</div>

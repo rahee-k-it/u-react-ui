@@ -1,10 +1,9 @@
-
-import Button from "../Button";
+import Button from '../Button';
 
 const meta = {
-    title: "/components/Button",
-    component: Button,
-    argTypes: { onClick: { action: 'clicked' } },
+  title: '/components/Button',
+  component: Button,
+  argTypes: { onClick: { action: 'clicked' } },
 };
 
 export default meta;
@@ -16,28 +15,22 @@ export const FaceBookBtn = Template.bind({});
 export const KakaoBtn = Template.bind({});
 export const GithubBtn = Template.bind({});
 
-
-
 Default.args = {
-    title: "Button",
-    bgColor: "",
+  title: 'Button',
+  bgColor: '',
 };
 
 FaceBookBtn.args = {
-    title: "FaceBook",
-    bgColor: "#1A74E3",
+  title: 'FaceBook',
+  bgColor: '#1A74E3',
 };
 
 KakaoBtn.args = {
-    title: "Kakao",
-    bgColor: "#F7E10B",
+  title: 'Kakao',
+  bgColor: '#F7E10B',
 };
-
 
 GithubBtn.args = {
-    title: "Github",
-    bgColor: "#2CA44E",
+  title: 'Github',
+  bgColor: '#2CA44E',
 };
-
-
-
