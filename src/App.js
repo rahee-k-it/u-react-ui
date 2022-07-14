@@ -9,7 +9,7 @@ const GlobalStyle = createGlobalStyle`
     }
     li{
         margin-bottom: 10px;
-        border-bottom: 1px solid gray;
+        /* border-bottom: 1px solid gray; */
         width: fit-content;
     }
 `;
