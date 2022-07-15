@@ -1,17 +1,13 @@
-import Card from '../components/Card';
+import Card from "../components/Card";
 
 function CardPage() {
   return (
     <>
       <div>
         <Card
-          title="card"
-          content={
-            <>
-              <div>1.이미지파일 넣기</div>
-              <div>2.디자인변경</div>
-            </>
-          }
+          bgImg="assets/image/cake.png"
+          title="당근 케이크"
+          content={<>맛있음. 우유랑 먹는거 추천</>}
         />
       </div>
     </>

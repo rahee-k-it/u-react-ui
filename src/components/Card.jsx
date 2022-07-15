@@ -1,11 +1,13 @@
-import styled from 'styled-components';
+import styled from "styled-components";
+// import cake from "../components/cake.png";
 
 let Container = styled.div`
   margin: 50px;
   width: 300px;
   height: 400px;
-  background-color: grey;
+  background-color: whitesmoke;
   border-radius: 15px;
+  box-shadow: 10px 10px 5px gray;
 `;
 
 let Flex = styled.div`
@@ -13,37 +15,36 @@ let Flex = styled.div`
   justify-content: center;
 `;
 
-let Image = styled.div`
+let Image = styled.img`
   margin-top: 30px;
   width: 250px;
   height: 200px;
-  background-color: aquamarine;
+  background-image: url(${(props) => props.bgImg});
+  background-size: cover;
+  border-radius: 5px;
 `;
 
 let Title = styled.h1`
   text-align: center;
-  color: white;
+  color: black;
   font-size: 30px;
 `;
 
 let Content = styled.div`
   margin-left: 20px;
-  color: whitesmoke;
+  color: black;
 `;
 
-function Card({ title, content }) {
+function Card({ title, content, bgImg }) {
   return (
     <>
       <Container>
         <Flex>
-          <Image></Image>
+          <Image bgImg={bgImg}></Image>
         </Flex>
         <div>
           <Title>{title}</Title>
-          <Content>
-            {content}
-            {/* <div>1.이미지파일 넣기</div> <div>2.디자인변경</div> */}
-          </Content>
+          <Content>{content}</Content>
         </div>
       </Container>
     </>
