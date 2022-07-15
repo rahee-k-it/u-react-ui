@@ -10,7 +10,12 @@ let CardsContainer = styled.div`
 function CardPage() {
   return (
     <CardsContainer>
-      <Card bgImg="assets/image/cake.png" title="Title" content="Content" />
+      <Card
+        bgImg="assets/image/cake.png"
+        title="Title"
+        content="Content"
+        shadowDirection="down-left"
+      />
     </CardsContainer>
   );
 }

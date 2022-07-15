@@ -1,5 +1,16 @@
 import styled from "styled-components";
-// import cake from "../components/cake.png";
+// import cake from "../components/c
+
+const boxShadowDirections = {
+  up: "0 -5px",
+  "up-right": "5px -5px",
+  right: "5px 0",
+  "down-right": "5px 5px",
+  down: "0 5px",
+  "down-left": "-5px 5px",
+  left: "-5px 0",
+  "up-left": "-5px -5px",
+};
 
 let Container = styled.div`
   margin: 50px;
@@ -7,7 +18,8 @@ let Container = styled.div`
   height: 400px;
   background-color: whitesmoke;
   border-radius: 15px;
-  box-shadow: 10px 10px 5px gray;
+  ${({ shadowDirection }) =>
+    shadowDirection ? "box-shadow: " + boxShadowDirections[shadowDirection] + " 5px gray" : ""}
 `;
 
 let Flex = styled.div`
@@ -35,9 +47,9 @@ let Content = styled.div`
   color: black;
 `;
 
-function Card({ title, content, bgImg }) {
+function Card({ title, content, bgImg, shadowDirection }) {
   return (
-    <Container>
+    <Container shadowDirection={shadowDirection}>
       <Flex>
         <Image bgImg={bgImg}></Image>
       </Flex>
