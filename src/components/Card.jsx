@@ -37,17 +37,15 @@ let Content = styled.div`
 
 function Card({ title, content, bgImg }) {
   return (
-    <>
-      <Container>
-        <Flex>
-          <Image bgImg={bgImg}></Image>
-        </Flex>
-        <div>
-          <Title>{title}</Title>
-          <Content>{content}</Content>
-        </div>
-      </Container>
-    </>
+    <Container>
+      <Flex>
+        <Image bgImg={bgImg}></Image>
+      </Flex>
+      <div>
+        <Title>{title}</Title>
+        <Content>{content}</Content>
+      </div>
+    </Container>
   );
 }
 
