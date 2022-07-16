@@ -1,9 +1,18 @@
 import { Link } from "react-router-dom";
 import { createGlobalStyle } from "styled-components";
 import Router from "./Router";
+// import "./assets/css/reset.css";
 
 const GlobalStyle = createGlobalStyle`
- 
+    a{
+        text-decoration: none;
+        color:black;
+    }
+
+    h1,h2,h3,h4,h5,h6 {
+      margin: 0;
+      padding: 0;
+    }
 `;
 
 function App() {
