@@ -1,5 +1,4 @@
 import styled from "styled-components";
-// import cake from "../components/c
 
 const boxShadowDirections = {
   up: "0 -5px",
@@ -45,9 +44,10 @@ let Title = styled.h1`
 let Content = styled.div`
   margin-left: 20px;
   color: black;
+  font-size: 25px;
 `;
 
-function Card({ title, content, bgImg, shadowDirection }) {
+function ImageCard({ title, content, bgImg, shadowDirection }) {
   return (
     <Container shadowDirection={shadowDirection}>
       <Flex>
@@ -61,4 +61,4 @@ function Card({ title, content, bgImg, shadowDirection }) {
   );
 }
 
-export default Card;
+export default ImageCard;
