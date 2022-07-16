@@ -10,7 +10,6 @@ const GlobalStyle = createGlobalStyle`
     }
     li{
         margin-bottom: 10px;
-        border-bottom: 1px solid gray;
         width: fit-content;
     }
     h1,h2,h3,h4,h5,h6 {

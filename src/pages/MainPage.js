@@ -12,7 +12,7 @@ function MainPage() {
           </li>
 
           <li>
-            <Link to={'/button'}>
+            <Link to={'/buttons'}>
               <span>버튼페이지 이동</span>
             </Link>
           </li>

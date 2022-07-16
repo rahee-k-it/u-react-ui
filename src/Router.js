@@ -1,5 +1,5 @@
 import { Route, Routes } from 'react-router-dom';
-import Button from './components/Button';
+import Buttons from './pages/ButtonsPage';
 import CardPage from './pages/CardPage';
 import MainPage from './pages/MainPage';
 
@@ -7,7 +7,7 @@ function Router() {
   return (
     <Routes>
       <Route path="/" element={<MainPage />} />
-      <Route path="/button" element={<Button title="Button" />} />
+      <Route path="/buttons" element={<Buttons />} />
       <Route path="/card" element={<CardPage />} />
     </Routes>
   );
