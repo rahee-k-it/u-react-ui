@@ -6,6 +6,12 @@ const DisabledContainer = styled.button`
   color: ${(props) => props.color};
   border-radius: 30px;
   font-family: 700;
+  width: ${(props) => props.width};
+  height: ${(props) => props.height};
+  font-size: ${(props) => props.fontSize};
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-color: white;
   cursor: pointer;
   :disabled {
@@ -13,10 +19,10 @@ const DisabledContainer = styled.button`
   }
 `;
 
-function DisabledBtn({ title, color }) {
+function DisabledBtn({ title, color, width, height, fontSize }) {
   return (
     <>
-      <DisabledContainer disabled color={color}>
+      <DisabledContainer disabled color={color} width={width} height={height} fontSize={fontSize}>
         <span>{title}</span>
       </DisabledContainer>
     </>

@@ -20,18 +20,23 @@ const LoadingIcon = styled.i`
 export const Container = styled.button`
   padding: 7px;
   background-color: ${(props) => props.bgColor};
-  display: flex;
   border: none;
   border-radius: 5px;
   color: white;
   font-family: 700;
+  width: ${(props) => props.width};
+  height: ${(props) => props.height};
+  font-size: ${(props) => props.fontSize};
+  display: flex;
+  justify-content: center;
+  align-items: center;
   cursor: pointer;
 `;
 
-function LoadingBtn({ title, bgColor }) {
+function LoadingBtn({ title, bgColor, width, height, fontSize }) {
   return (
     <>
-      <Container bgColor={bgColor}>
+      <Container bgColor={bgColor} width={width} height={height} fontSize={fontSize}>
         <LoadingIcon>
           <FontAwesomeIcon icon={faSpinner} />
         </LoadingIcon>

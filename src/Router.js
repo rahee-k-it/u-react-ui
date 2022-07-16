@@ -1,13 +1,13 @@
-import { Route, Routes } from 'react-router-dom';
-import Buttons from './pages/ButtonsPage';
-import CardPage from './pages/CardPage';
-import MainPage from './pages/MainPage';
+import { Route, Routes } from "react-router-dom";
+import Button from "./pages/ButtonPage";
+import CardPage from "./pages/CardPage";
+import MainPage from "./pages/MainPage";
 
 function Router() {
   return (
     <Routes>
       <Route path="/" element={<MainPage />} />
-      <Route path="/buttons" element={<Buttons />} />
+      <Route path="/button" element={<Button />} />
       <Route path="/card" element={<CardPage />} />
     </Routes>
   );
