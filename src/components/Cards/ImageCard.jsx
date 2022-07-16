@@ -11,7 +11,7 @@ const boxShadowDirections = {
   "up-left": "-5px -5px",
 };
 
-let Container = styled.div`
+const Container = styled.div`
   margin: 50px;
   width: 300px;
   height: 400px;
@@ -21,12 +21,12 @@ let Container = styled.div`
     shadowDirection ? "box-shadow: " + boxShadowDirections[shadowDirection] + " 5px gray" : ""}
 `;
 
-let Flex = styled.div`
+const Flex = styled.div`
   display: flex;
   justify-content: center;
 `;
 
-let Image = styled.img`
+const Image = styled.img`
   margin-top: 30px;
   width: 250px;
   height: 200px;
@@ -35,13 +35,13 @@ let Image = styled.img`
   border-radius: 5px;
 `;
 
-let Title = styled.h1`
+const Title = styled.h1`
   text-align: center;
   color: black;
   font-size: 30px;
 `;
 
-let Content = styled.div`
+const Content = styled.div`
   margin-left: 20px;
   color: black;
   font-size: 25px;
