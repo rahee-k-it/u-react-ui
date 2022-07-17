@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
 const OutlineContainer = styled.button`
   border: 1px solid ${(props) => props.color};
