@@ -12,8 +12,14 @@ function MainPage() {
           </li>
 
           <li>
-            <Link to={"/button"}>
+            <Link to={"/buttons"}>
               <span>버튼페이지 이동</span>
+            </Link>
+          </li>
+
+          <li>
+            <Link to={"/navbar"}>
+              <span>네브바페이지 이동</span>
             </Link>
           </li>
         </ul>
