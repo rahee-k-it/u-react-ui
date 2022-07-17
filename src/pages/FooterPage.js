@@ -13,7 +13,7 @@ function FooterPage() {
         </Li>
 
         <Li>
-          <Link to={"partition"}>Partition Footer</Link>
+          <Link to={"underline"}>UnderLine Footer</Link>
         </Li>
       </ol>
     </>

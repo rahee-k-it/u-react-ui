@@ -1,3 +1,4 @@
+import styled from "styled-components";
 import DisabledBtn from "../components/Buttons/DisableBtn";
 import FillBtn from "../components/Buttons/FillBtn";
 import HoverBtn from "../components/Buttons/HoverBtn";
@@ -5,31 +6,34 @@ import LinkBtn from "../components/Buttons/LinkBtn";
 import LoadingBtn from "../components/Buttons/LoadingBtn";
 import OutlineBtn from "../components/Buttons/OutlineBtn";
 
+const Li = styled.li`
+  margin: 10px 0px;
+`;
 function Button() {
   return (
     <>
       <ol>
-        <li>
+        <Li>
           <LoadingBtn title="Loading" bgColor="tomato" />
-        </li>
+        </Li>
 
-        <li>
+        <Li>
           <FillBtn title="Fill" bgColor="tomato" />
-        </li>
+        </Li>
 
-        <li>
+        <Li>
           <OutlineBtn title="OutLine" color="tomato" />
-        </li>
+        </Li>
 
-        <li>
+        <Li>
           <DisabledBtn title="Disabled" color="tomato" />
-        </li>
-        <li>
+        </Li>
+        <Li>
           <HoverBtn title="Hover" color="tomato" />
-        </li>
-        <li>
+        </Li>
+        <Li>
           <LinkBtn title="Link" color="tomato" />
-        </li>
+        </Li>
       </ol>
     </>
   );

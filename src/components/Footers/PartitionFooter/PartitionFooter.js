@@ -2,7 +2,7 @@ import styled from "styled-components";
 import ItemContent from "./ItemContent";
 import ItemTitle from "./ItemTitle";
 
-const Wrapper = styled.div`
+export const Wrapper = styled.div`
   box-sizing: border-box;
   min-width: 100%;
   height: 250px;
