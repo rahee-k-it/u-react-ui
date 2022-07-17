@@ -1,4 +1,5 @@
 import { Route, Routes } from "react-router-dom";
+import HoverFooter from "./components/Footers/HoverFooter/HoverFooter";
 import PartitionFooter from "./components/Footers/PartitionFooter/PartitionFooter";
 import UnderLineFoooter from "./components/Footers/UnderLineFooter/UnderLineFooter";
 import Buttons from "./pages/ButtonPage";
@@ -15,6 +16,7 @@ function Router() {
       <Route path="/footer" element={<FooterPage />} />
       <Route path="/footer/partition" element={<PartitionFooter />} />
       <Route path="/footer/underline" element={<UnderLineFoooter />} />
+      <Route path="/footer/hover" element={<HoverFooter />} />
     </Routes>
   );
 }

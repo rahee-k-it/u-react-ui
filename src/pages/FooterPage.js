@@ -15,6 +15,10 @@ function FooterPage() {
         <Li>
           <Link to={"underline"}>UnderLine Footer</Link>
         </Li>
+
+        <Li>
+          <Link to={"hover"}>Hover Footer</Link>
+        </Li>
       </ol>
     </>
   );
