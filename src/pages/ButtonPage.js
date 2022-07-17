@@ -1,11 +1,11 @@
-import DisabledBtn from '../components/buttons/DisableBtn';
-import FillBtn from '../components/buttons/FillBtn';
-import HoverBtn from '../components/buttons/HoverBtn';
-import LinkBtn from '../components/buttons/LinkBtn';
-import LoadingBtn from '../components/buttons/LoadingBtn';
-import OutlineBtn from '../components/buttons/OutlineBtn';
+import DisabledBtn from "../components/Buttons/DisableBtn";
+import FillBtn from "../components/Buttons/FillBtn";
+import HoverBtn from "../components/Buttons/HoverBtn";
+import LinkBtn from "../components/Buttons/LinkBtn";
+import LoadingBtn from "../components/Buttons/LoadingBtn";
+import OutlineBtn from "../components/Buttons/OutlineBtn";
 
-function Buttons() {
+function Button() {
   return (
     <>
       <ol>
@@ -35,4 +35,4 @@ function Buttons() {
   );
 }
 
-export default Buttons;
+export default Button;
