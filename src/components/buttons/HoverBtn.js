@@ -11,6 +11,7 @@ const HoverContainer = styled.button`
   display: flex;
   justify-content: center;
   align-items: center;
+  display: flex;
   border-radius: 5px;
   font-family: 700;
   cursor: pointer;

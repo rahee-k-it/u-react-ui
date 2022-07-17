@@ -1,10 +1,13 @@
+
 import styled from "styled-components";
+
 
 const FillContainer = styled.button`
   border: none;
   padding: 8px 30px;
   background-color: ${(props) => props.bgColor};
   color: white;
+
   width: ${(props) => props.width};
   height: ${(props) => props.height};
   font-size: ${(props) => props.fontSize};

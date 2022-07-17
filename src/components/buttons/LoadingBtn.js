@@ -3,6 +3,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSpinner } from "@fortawesome/free-solid-svg-icons";
 import { keyframes } from "styled-components";
 
+
 const rotation = keyframes`
     from{
         transform: rotate(0deg);

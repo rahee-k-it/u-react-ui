@@ -1,4 +1,6 @@
+
 import styled from "styled-components";
+
 
 const DisabledContainer = styled.button`
   border: 1px solid ${(props) => props.color};
@@ -18,6 +20,7 @@ const DisabledContainer = styled.button`
     opacity: 0.3;
   }
 `;
+
 
 function DisabledBtn({ title, color, width, height, fontSize }) {
   return (
