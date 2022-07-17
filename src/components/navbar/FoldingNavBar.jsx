@@ -7,7 +7,6 @@ const Container = styled.div`
   height: 50px;
   background-color: #000000;
   display: flex;
-  /* align-items: center; */
   justify-content: space-between;
 `;
 
@@ -38,7 +37,6 @@ const Button = styled.button`
   transition: background-color 0.1s linear;
   &:hover {
     background-color: #3d3b3b;
-    /* background-color: ${(props) => props.color}; */
     color: white;
     opacity: 0.7;
   }
