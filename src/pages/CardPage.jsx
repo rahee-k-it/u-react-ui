@@ -2,7 +2,7 @@ import ImageCard from "../components/Cards/ImageCard";
 import BasicCard from "../components/Cards/BasicCard";
 import styled from "styled-components";
 
-let CardsContainer = styled.div`
+const CardsContainer = styled.div`
   background-color: #f5f3d8;
   min-height: 100vh;
   min-width: 400vh;
@@ -11,11 +11,11 @@ let CardsContainer = styled.div`
   flex-direction: column;
 `;
 
-let BasicCardsContainer = styled.div`
+const BasicCardsContainer = styled.div`
   display: flex;
 `;
 
-let ImageCardsContainer = styled.div`
+const ImageCardsContainer = styled.div`
   display: flex;
 `;
 

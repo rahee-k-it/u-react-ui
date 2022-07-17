@@ -11,7 +11,7 @@ const boxShadowDirections = {
   "up-left": "-5px -5px",
 };
 
-let Container = styled.div`
+const Container = styled.div`
   margin: 50px;
   width: 300px;
   height: 300px;
@@ -22,7 +22,7 @@ let Container = styled.div`
     shadowDirection ? "box-shadow: " + boxShadowDirections[shadowDirection] + " 5px gray" : ""}
 `;
 
-let SubTitle = styled.h2`
+const SubTitle = styled.h2`
   color: #5a5a5a;
   font-size: 15px;
   padding-top: 30px;
@@ -32,7 +32,7 @@ let SubTitle = styled.h2`
   border-top-right-radius: 15px;
 `;
 
-let Title = styled.h1`
+const Title = styled.h1`
   color: black;
   font-size: 30px;
   ${(props) => `background-color: ${props.bgColor ?? "#c2c1c1"};`}
@@ -40,7 +40,7 @@ let Title = styled.h1`
   padding-bottom: 10px;
 `;
 
-let Content = styled.div`
+const Content = styled.div`
   padding-top: 10px;
   color: black;
   font-size: 25px;
