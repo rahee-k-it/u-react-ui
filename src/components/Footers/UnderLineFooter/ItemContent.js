@@ -7,14 +7,17 @@ const Content = styled.a`
   margin: 5px 0px;
   cursor: pointer;
 
+  a {
+    color: ${(props) => props.contentColor};
+  }
   &:hover {
     text-decoration: underline;
   }
 `;
 
-function ItemContent({ content }) {
+function ItemContent({ content, contentColor }) {
   return (
-    <Content>
+    <Content contentColor={contentColor}>
       <Link to={"/"}> {content}</Link>
     </Content>
   );

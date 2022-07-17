@@ -4,7 +4,7 @@ import ItemContent from "./ItemContent";
 import ItemTitle from "./ItemTitle";
 
 const WrapperUnderLine = styled(Wrapper)`
-  background-color: #f5f5f7;
+  background-color: ${(props) => props.bgColor};
   height: 300px;
   display: flex;
   flex-direction: column;
@@ -40,37 +40,37 @@ const Container = styled.div`
   justify-content: center;
 `;
 
-function UnderLineFoooter() {
+function UnderLineFoooter({ bgColor, titleColor, contentColor }) {
   return (
     <>
-      <WrapperUnderLine>
+      <WrapperUnderLine bgColor={bgColor}>
         <Box>
           <Container>
-            <ItemTitle title="Title" />
-            <ItemContent content="Content" />
-            <ItemContent content="Content" />
-            <ItemContent content="Content" />
+            <ItemTitle title="Title" titleColor={titleColor} />
+            <ItemContent content="Content" contentColor={contentColor} />
+            <ItemContent content="Content" contentColor={contentColor} />
+            <ItemContent content="Content" contentColor={contentColor} />
           </Container>
 
           <Container>
-            <ItemTitle title="Title" />
-            <ItemContent content="Content" />
-            <ItemContent content="Content" />
-            <ItemContent content="Content" />
+            <ItemTitle title="Title" titleColor={titleColor} />
+            <ItemContent content="Content" contentColor={contentColor} />
+            <ItemContent content="Content" contentColor={contentColor} />
+            <ItemContent content="Content" contentColor={contentColor} />
           </Container>
 
           <Container>
-            <ItemTitle title="Title" />
-            <ItemContent content="Content" />
-            <ItemContent content="Content" />
-            <ItemContent content="Content" />
+            <ItemTitle title="Title" titleColor={titleColor} />
+            <ItemContent content="Content" contentColor={contentColor} />
+            <ItemContent content="Content" contentColor={contentColor} />
+            <ItemContent content="Content" contentColor={contentColor} />
           </Container>
 
           <Container>
-            <ItemTitle title="Title" />
-            <ItemContent content="Content" />
-            <ItemContent content="Content" />
-            <ItemContent content="Content" />
+            <ItemTitle title="Title" titleColor={titleColor} />
+            <ItemContent content="Content" contentColor={contentColor} />
+            <ItemContent content="Content" contentColor={contentColor} />
+            <ItemContent content="Content" contentColor={contentColor} />
           </Container>
         </Box>
 

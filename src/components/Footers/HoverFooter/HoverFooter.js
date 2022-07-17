@@ -4,7 +4,7 @@ import ItemContent from "./ItemContent";
 import ItemTitle from "./ItemTitle";
 
 const WrapperUnderLine = styled(Wrapper)`
-  background-color: #1f1f1f;
+  background-color: ${(props) => props.bgColor};
   height: 300px;
   display: flex;
   flex-direction: column;
@@ -42,37 +42,81 @@ const Container = styled.div`
   justify-content: center;
 `;
 
-function HoverFooter() {
+function HoverFooter({ bgColor, titleColor, contentColor, contentHoverColor }) {
   return (
     <>
-      <WrapperUnderLine>
+      <WrapperUnderLine bgColor={bgColor}>
         <Box>
           <Container>
-            <ItemTitle title="Title" />
-            <ItemContent content="Content" />
-            <ItemContent content="Content" />
-            <ItemContent content="Content" />
+            <ItemTitle title="Title" titleColor={titleColor} />
+            <ItemContent
+              content="Content"
+              contentHoverColor={contentHoverColor}
+              contentColor={contentColor}
+            />
+            <ItemContent
+              content="Content"
+              contentColor={contentColor}
+              contentHoverColor={contentHoverColor}
+            />
+            <ItemContent
+              content="Content"
+              contentColor={contentColor}
+              contentHoverColor={contentHoverColor}
+            />
           </Container>
 
           <Container>
-            <ItemTitle title="Title" />
-            <ItemContent content="Content" />
-            <ItemContent content="Content" />
-            <ItemContent content="Content" />
+            <ItemTitle title="Title" titleColor={titleColor} />
+            <ItemContent
+              content="Content"
+              contentColor={contentColor}
+              contentHoverColor={contentHoverColor}
+            />
+            <ItemContent
+              content="Content"
+              contentColor={contentColor}
+              contentHoverColor={contentHoverColor}
+            />
+            <ItemContent
+              content="Content"
+              contentColor={contentColor}
+              contentHoverColor={contentHoverColor}
+            />
           </Container>
 
           <Container>
-            <ItemTitle title="Title" />
-            <ItemContent content="Content" />
-            <ItemContent content="Content" />
-            <ItemContent content="Content" />
+            <ItemTitle title="Title" titleColor={titleColor} />
+            <ItemContent
+              content="Content"
+              contentColor={contentColor}
+              contentHoverColor={contentHoverColor}
+            />
+            <ItemContent
+              content="Content"
+              contentColor={contentColor}
+              contentHoverColor={contentHoverColor}
+            />
+            <ItemContent
+              content="Content"
+              contentColor={contentColor}
+              contentHoverColor={contentHoverColor}
+            />
           </Container>
 
           <Container>
-            <ItemTitle title="Title" />
-            <ItemContent content="Content" />
-            <ItemContent content="Content" />
-            <ItemContent content="Content" />
+            <ItemTitle title="Title" titleColor={titleColor} />
+            <ItemContent
+              content="Content"
+              contentColor={contentColor}
+              contentHoverColor={contentHoverColor}
+            />
+            <ItemContent
+              content="Content"
+              contentColor={contentColor}
+              contentHoverColor={contentHoverColor}
+            />
+            <ItemContent content="Content" contentColor={contentColor} />
           </Container>
         </Box>
 

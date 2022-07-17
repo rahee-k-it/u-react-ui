@@ -9,7 +9,7 @@ export const Wrapper = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #f3ede8;
+  background-color: ${(props) => props.bgColor};
   padding: 0px 20px;
 `;
 
@@ -27,29 +27,29 @@ const Container = styled.div`
   }
 `;
 
-function PartitionFooter() {
+function PartitionFooter({ bgColor, titleColor, contentColor }) {
   return (
     <>
-      <Wrapper>
+      <Wrapper bgColor={bgColor}>
         <Container>
-          <ItemTitle title="Title" />
-          <ItemContent content="Content" />
-          <ItemContent content="Content" />
-          <ItemContent content="Content" />
+          <ItemTitle title="Title" titleColor={titleColor} />
+          <ItemContent content="Content" contentColor={contentColor} />
+          <ItemContent content="Content" contentColor={contentColor} />
+          <ItemContent content="Content" contentColor={contentColor} />
         </Container>
 
         <Container>
-          <ItemTitle title="Title" />
-          <ItemContent content="Content" />
-          <ItemContent content="Content" />
-          <ItemContent content="Content" />
+          <ItemTitle title="Title" titleColor={titleColor} />
+          <ItemContent content="Content" contentColor={contentColor} />
+          <ItemContent content="Content" contentColor={contentColor} />
+          <ItemContent content="Content" contentColor={contentColor} />
         </Container>
 
         <Container>
-          <ItemTitle title="Title" />
-          <ItemContent content="Content" />
-          <ItemContent content="Content" />
-          <ItemContent content="Content" />
+          <ItemTitle title="Title" titleColor={titleColor} />
+          <ItemContent content="Content" contentColor={contentColor} />
+          <ItemContent content="Content" contentColor={contentColor} />
+          <ItemContent content="Content" contentColor={contentColor} />
         </Container>
       </Wrapper>
     </>

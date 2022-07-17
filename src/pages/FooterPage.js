@@ -1,11 +1,9 @@
-import { Link } from "react-router-dom";
 import styled from "styled-components";
 import HoverFooter from "../components/Footers/HoverFooter/HoverFooter";
 import PartitionFooter from "../components/Footers/PartitionFooter/PartitionFooter";
 import UnderLineFoooter from "../components/Footers/UnderLineFooter/UnderLineFooter";
 
 const Li = styled.li`
-  width: 100%;
   margin: 100px;
 `;
 function FooterPage() {
@@ -13,21 +11,20 @@ function FooterPage() {
     <>
       <ol>
         <Li>
-          <Link to={"partition"}>
-            <PartitionFooter />
-          </Link>
+          <PartitionFooter bgColor="#f3ede8" titleColor="black" contentColor="" />
         </Li>
 
         <Li>
-          <Link to={"underline"}>
-            <UnderLineFoooter />
-          </Link>
+          <UnderLineFoooter bgColor="#f5f5f7" titleColor="black" contentColor="" />
         </Li>
 
         <Li>
-          <Link to={"hover"}>
-            <HoverFooter />
-          </Link>
+          <HoverFooter
+            bgColor="#1F1F1F"
+            titleColor="white"
+            contentColor=""
+            contentHoverColor="white"
+          />
         </Li>
       </ol>
     </>

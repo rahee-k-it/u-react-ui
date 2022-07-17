@@ -6,11 +6,15 @@ const Content = styled.a`
   font-size: 12px;
   margin: 5px 0px;
   cursor: pointer;
+
+  a {
+    color: ${(props) => props.contentColor};
+  }
 `;
 
-function ItemContent({ content }) {
+function ItemContent({ content, contentColor }) {
   return (
-    <Content>
+    <Content contentColor={contentColor}>
       <Link to={"/"}> {content}</Link>
     </Content>
   );

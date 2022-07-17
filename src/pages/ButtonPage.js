@@ -9,7 +9,7 @@ import OutlineBtn from "../components/Buttons/OutlineBtn";
 const Li = styled.li`
   margin: 10px 0px;
 `;
-function Button() {
+function ButtonPage() {
   return (
     <>
       <ol>
@@ -39,4 +39,4 @@ function Button() {
   );
 }
 
-export default Button;
+export default ButtonPage;
