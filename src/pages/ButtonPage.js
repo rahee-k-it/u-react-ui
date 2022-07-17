@@ -6,40 +6,37 @@ import LinkBtn from "../components/Buttons/LinkBtn";
 import LoadingBtn from "../components/Buttons/LoadingBtn";
 import OutlineBtn from "../components/Buttons/OutlineBtn";
 
-const LiBox = styled.li`
-  margin-bottom: 10px;
+const Li = styled.li`
+  margin: 10px 0px;
 `;
-
-function Button() {
+function ButtonPage() {
   return (
     <>
       <ol>
-        <LiBox>
+        <Li>
           <LoadingBtn title="Loading" bgColor="tomato" />
-        </LiBox>
+        </Li>
 
-        <LiBox>
+        <Li>
           <FillBtn title="Fill" bgColor="tomato" />
-        </LiBox>
+        </Li>
 
-        <LiBox>
+        <Li>
           <OutlineBtn title="OutLine" color="tomato" />
-        </LiBox>
+        </Li>
 
-        <LiBox>
+        <Li>
           <DisabledBtn title="Disabled" color="tomato" />
-        </LiBox>
-
-        <LiBox>
+        </Li>
+        <Li>
           <HoverBtn title="Hover" color="tomato" />
-        </LiBox>
-
-        <LiBox>
+        </Li>
+        <Li>
           <LinkBtn title="Link" color="tomato" />
-        </LiBox>
+        </Li>
       </ol>
     </>
   );
 }
 
-export default Button;
+export default ButtonPage;

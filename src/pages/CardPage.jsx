@@ -1,5 +1,5 @@
-import ImageCard from "../components/cards/ImageCard";
-import BasicCard from "../components/cards/BasicCard";
+import ImageCard from "../components/Cards/ImageCard";
+import BasicCard from "../components/Cards/BasicCard";
 import styled from "styled-components";
 
 const CardsContainer = styled.div`

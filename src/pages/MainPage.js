@@ -22,6 +22,12 @@ function MainPage() {
               <span>네브바페이지 이동</span>
             </Link>
           </li>
+
+          <li>
+            <Link to={"/footer"}>
+              <span>Footer페이지 이동</span>
+            </Link>
+          </li>
         </ul>
       </div>
     </>
