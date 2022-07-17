@@ -1,8 +1,7 @@
-import { Route, Routes } from "react-router-dom";
-import Buttons from "./pages/ButtonsPage";
-import CardPage from "./pages/CardPage";
-import MainPage from "./pages/MainPage";
-import NavBarPage from "./pages/NavBarPage";
+import { Route, Routes } from 'react-router-dom';
+import Buttons from './pages/ButtonsPage';
+import CardPage from './pages/CardPage';
+import MainPage from './pages/MainPage';
 
 function Router() {
   return (
@@ -10,7 +9,6 @@ function Router() {
       <Route path="/" element={<MainPage />} />
       <Route path="/buttons" element={<Buttons />} />
       <Route path="/card" element={<CardPage />} />
-      <Route path="/navbar" element={<NavBarPage />} />
     </Routes>
   );
 }
