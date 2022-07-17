@@ -1,10 +1,16 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
 const HoverContainer = styled.button`
   border: 1px solid ${(props) => props.color};
   color: ${(props) => props.color};
   padding: 7px;
   background-color: white;
+  width: ${(props) => props.width};
+  height: ${(props) => props.height};
+  font-size: ${(props) => props.fontSize};
+  display: flex;
+  justify-content: center;
+  align-items: center;
   display: flex;
   border-radius: 5px;
   font-family: 700;
@@ -17,10 +23,10 @@ const HoverContainer = styled.button`
   }
 `;
 
-function HoverBtn({ color, title }) {
+function HoverBtn({ color, title, width, height, fontSize }) {
   return (
     <>
-      <HoverContainer color={color}>
+      <HoverContainer color={color} width={width} height={height} fontSize={fontSize}>
         <span>{title}</span>
       </HoverContainer>
     </>
