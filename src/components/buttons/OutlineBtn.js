@@ -1,4 +1,3 @@
-
 import styled from "styled-components";
 
 const OutlineContainer = styled.button`
@@ -22,6 +21,7 @@ function OutlineBtn({ title, color, width, height, fontSize }) {
     <>
       <OutlineContainer color={color} width={width} height={height} fontSize={fontSize}>
         <span>{title}</span>
+        <span>ss</span>
       </OutlineContainer>
     </>
   );
